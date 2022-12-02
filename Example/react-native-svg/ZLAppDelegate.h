@@ -1,0 +1,15 @@
+//
+//  ZLAppDelegate.h
+//  react-native-svg
+//
+//  Created by richiezhl on 12/02/2022.
+//  Copyright (c) 2022 richiezhl. All rights reserved.
+//
+
+@import UIKit;
+
+@interface ZLAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
