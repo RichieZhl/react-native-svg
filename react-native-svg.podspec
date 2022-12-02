@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Author 'Horcrux Chen'
                        DESC
 
-  s.homepage         = 'https://github.com/richiezhl/react-native-svg'
+  s.homepage         = 'https://github.com/react-native-community/react-native-svg'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'richiezhl' => 'lylaut@163.com' }
