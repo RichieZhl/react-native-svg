@@ -11,7 +11,7 @@ folly_version = '2021.07.22.00'
 
 Pod::Spec.new do |s|
   s.name             = 'react-native-svg'
-  s.version          = '13.6.0'
+  s.version          = '13.6.1'
   s.summary          = 'A short description of react-native-svg.'
 
 # This description is used to generate tags and improve search results.

@@ -10,7 +10,9 @@
 
 #pragma once
 
+#include <react/renderer/components/rnsvg/EventEmitters.h>
 #include <react/renderer/components/rnsvg/Props.h>
+#include <react/renderer/components/rnsvg/States.h>
 #include <react/renderer/components/view/ConcreteViewShadowNode.h>
 #include <jsi/jsi.h>
 
@@ -24,7 +26,9 @@ JSI_EXPORT extern const char RNSVGSvgViewAndroidComponentName[];
  */
 using RNSVGSvgViewAndroidShadowNode = ConcreteViewShadowNode<
     RNSVGSvgViewAndroidComponentName,
-    RNSVGSvgViewAndroidProps>;
+    RNSVGSvgViewAndroidProps,
+    RNSVGSvgViewAndroidEventEmitter,
+    RNSVGSvgViewAndroidState>;
 
 JSI_EXPORT extern const char RNSVGCircleComponentName[];
 
@@ -33,7 +37,9 @@ JSI_EXPORT extern const char RNSVGCircleComponentName[];
  */
 using RNSVGCircleShadowNode = ConcreteViewShadowNode<
     RNSVGCircleComponentName,
-    RNSVGCircleProps>;
+    RNSVGCircleProps,
+    RNSVGCircleEventEmitter,
+    RNSVGCircleState>;
 
 JSI_EXPORT extern const char RNSVGClipPathComponentName[];
 
@@ -42,7 +48,9 @@ JSI_EXPORT extern const char RNSVGClipPathComponentName[];
  */
 using RNSVGClipPathShadowNode = ConcreteViewShadowNode<
     RNSVGClipPathComponentName,
-    RNSVGClipPathProps>;
+    RNSVGClipPathProps,
+    RNSVGClipPathEventEmitter,
+    RNSVGClipPathState>;
 
 JSI_EXPORT extern const char RNSVGDefsComponentName[];
 
@@ -51,7 +59,9 @@ JSI_EXPORT extern const char RNSVGDefsComponentName[];
  */
 using RNSVGDefsShadowNode = ConcreteViewShadowNode<
     RNSVGDefsComponentName,
-    RNSVGDefsProps>;
+    RNSVGDefsProps,
+    RNSVGDefsEventEmitter,
+    RNSVGDefsState>;
 
 JSI_EXPORT extern const char RNSVGEllipseComponentName[];
 
@@ -60,7 +70,9 @@ JSI_EXPORT extern const char RNSVGEllipseComponentName[];
  */
 using RNSVGEllipseShadowNode = ConcreteViewShadowNode<
     RNSVGEllipseComponentName,
-    RNSVGEllipseProps>;
+    RNSVGEllipseProps,
+    RNSVGEllipseEventEmitter,
+    RNSVGEllipseState>;
 
 JSI_EXPORT extern const char RNSVGForeignObjectComponentName[];
 
@@ -69,7 +81,9 @@ JSI_EXPORT extern const char RNSVGForeignObjectComponentName[];
  */
 using RNSVGForeignObjectShadowNode = ConcreteViewShadowNode<
     RNSVGForeignObjectComponentName,
-    RNSVGForeignObjectProps>;
+    RNSVGForeignObjectProps,
+    RNSVGForeignObjectEventEmitter,
+    RNSVGForeignObjectState>;
 
 JSI_EXPORT extern const char RNSVGGroupComponentName[];
 
@@ -78,7 +92,9 @@ JSI_EXPORT extern const char RNSVGGroupComponentName[];
  */
 using RNSVGGroupShadowNode = ConcreteViewShadowNode<
     RNSVGGroupComponentName,
-    RNSVGGroupProps>;
+    RNSVGGroupProps,
+    RNSVGGroupEventEmitter,
+    RNSVGGroupState>;
 
 JSI_EXPORT extern const char RNSVGSvgViewComponentName[];
 
@@ -87,7 +103,9 @@ JSI_EXPORT extern const char RNSVGSvgViewComponentName[];
  */
 using RNSVGSvgViewShadowNode = ConcreteViewShadowNode<
     RNSVGSvgViewComponentName,
-    RNSVGSvgViewProps>;
+    RNSVGSvgViewProps,
+    RNSVGSvgViewEventEmitter,
+    RNSVGSvgViewState>;
 
 JSI_EXPORT extern const char RNSVGLinearGradientComponentName[];
 
@@ -96,7 +114,9 @@ JSI_EXPORT extern const char RNSVGLinearGradientComponentName[];
  */
 using RNSVGLinearGradientShadowNode = ConcreteViewShadowNode<
     RNSVGLinearGradientComponentName,
-    RNSVGLinearGradientProps>;
+    RNSVGLinearGradientProps,
+    RNSVGLinearGradientEventEmitter,
+    RNSVGLinearGradientState>;
 
 JSI_EXPORT extern const char RNSVGLineComponentName[];
 
@@ -105,7 +125,9 @@ JSI_EXPORT extern const char RNSVGLineComponentName[];
  */
 using RNSVGLineShadowNode = ConcreteViewShadowNode<
     RNSVGLineComponentName,
-    RNSVGLineProps>;
+    RNSVGLineProps,
+    RNSVGLineEventEmitter,
+    RNSVGLineState>;
 
 JSI_EXPORT extern const char RNSVGMarkerComponentName[];
 
@@ -114,7 +136,9 @@ JSI_EXPORT extern const char RNSVGMarkerComponentName[];
  */
 using RNSVGMarkerShadowNode = ConcreteViewShadowNode<
     RNSVGMarkerComponentName,
-    RNSVGMarkerProps>;
+    RNSVGMarkerProps,
+    RNSVGMarkerEventEmitter,
+    RNSVGMarkerState>;
 
 JSI_EXPORT extern const char RNSVGMaskComponentName[];
 
@@ -123,7 +147,9 @@ JSI_EXPORT extern const char RNSVGMaskComponentName[];
  */
 using RNSVGMaskShadowNode = ConcreteViewShadowNode<
     RNSVGMaskComponentName,
-    RNSVGMaskProps>;
+    RNSVGMaskProps,
+    RNSVGMaskEventEmitter,
+    RNSVGMaskState>;
 
 JSI_EXPORT extern const char RNSVGPathComponentName[];
 
@@ -132,7 +158,9 @@ JSI_EXPORT extern const char RNSVGPathComponentName[];
  */
 using RNSVGPathShadowNode = ConcreteViewShadowNode<
     RNSVGPathComponentName,
-    RNSVGPathProps>;
+    RNSVGPathProps,
+    RNSVGPathEventEmitter,
+    RNSVGPathState>;
 
 JSI_EXPORT extern const char RNSVGPatternComponentName[];
 
@@ -141,7 +169,9 @@ JSI_EXPORT extern const char RNSVGPatternComponentName[];
  */
 using RNSVGPatternShadowNode = ConcreteViewShadowNode<
     RNSVGPatternComponentName,
-    RNSVGPatternProps>;
+    RNSVGPatternProps,
+    RNSVGPatternEventEmitter,
+    RNSVGPatternState>;
 
 JSI_EXPORT extern const char RNSVGRadialGradientComponentName[];
 
@@ -150,7 +180,9 @@ JSI_EXPORT extern const char RNSVGRadialGradientComponentName[];
  */
 using RNSVGRadialGradientShadowNode = ConcreteViewShadowNode<
     RNSVGRadialGradientComponentName,
-    RNSVGRadialGradientProps>;
+    RNSVGRadialGradientProps,
+    RNSVGRadialGradientEventEmitter,
+    RNSVGRadialGradientState>;
 
 JSI_EXPORT extern const char RNSVGRectComponentName[];
 
@@ -159,7 +191,9 @@ JSI_EXPORT extern const char RNSVGRectComponentName[];
  */
 using RNSVGRectShadowNode = ConcreteViewShadowNode<
     RNSVGRectComponentName,
-    RNSVGRectProps>;
+    RNSVGRectProps,
+    RNSVGRectEventEmitter,
+    RNSVGRectState>;
 
 JSI_EXPORT extern const char RNSVGSymbolComponentName[];
 
@@ -168,7 +202,9 @@ JSI_EXPORT extern const char RNSVGSymbolComponentName[];
  */
 using RNSVGSymbolShadowNode = ConcreteViewShadowNode<
     RNSVGSymbolComponentName,
-    RNSVGSymbolProps>;
+    RNSVGSymbolProps,
+    RNSVGSymbolEventEmitter,
+    RNSVGSymbolState>;
 
 JSI_EXPORT extern const char RNSVGTextComponentName[];
 
@@ -177,7 +213,9 @@ JSI_EXPORT extern const char RNSVGTextComponentName[];
  */
 using RNSVGTextShadowNode = ConcreteViewShadowNode<
     RNSVGTextComponentName,
-    RNSVGTextProps>;
+    RNSVGTextProps,
+    RNSVGTextEventEmitter,
+    RNSVGTextState>;
 
 JSI_EXPORT extern const char RNSVGTextPathComponentName[];
 
@@ -186,7 +224,9 @@ JSI_EXPORT extern const char RNSVGTextPathComponentName[];
  */
 using RNSVGTextPathShadowNode = ConcreteViewShadowNode<
     RNSVGTextPathComponentName,
-    RNSVGTextPathProps>;
+    RNSVGTextPathProps,
+    RNSVGTextPathEventEmitter,
+    RNSVGTextPathState>;
 
 JSI_EXPORT extern const char RNSVGTSpanComponentName[];
 
@@ -195,7 +235,9 @@ JSI_EXPORT extern const char RNSVGTSpanComponentName[];
  */
 using RNSVGTSpanShadowNode = ConcreteViewShadowNode<
     RNSVGTSpanComponentName,
-    RNSVGTSpanProps>;
+    RNSVGTSpanProps,
+    RNSVGTSpanEventEmitter,
+    RNSVGTSpanState>;
 
 JSI_EXPORT extern const char RNSVGUseComponentName[];
 
@@ -204,7 +246,9 @@ JSI_EXPORT extern const char RNSVGUseComponentName[];
  */
 using RNSVGUseShadowNode = ConcreteViewShadowNode<
     RNSVGUseComponentName,
-    RNSVGUseProps>;
+    RNSVGUseProps,
+    RNSVGUseEventEmitter,
+    RNSVGUseState>;
 
 } // namespace react
 } // namespace facebook
